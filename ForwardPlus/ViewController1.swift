@@ -7,15 +7,20 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
-    static let identifer = "ViewController"
+final class ViewController1: UIViewController {
+    static let identifer = "ViewController1"
 
-    @IBOutlet var label: UILabel!
-
+    
     var number: Int = 0
+    static let idc: Int = 1
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        label.text = number.description
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+
+        
     }
 }
