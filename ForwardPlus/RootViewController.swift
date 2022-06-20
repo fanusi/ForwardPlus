@@ -9,6 +9,8 @@ import CoreML
 import TabPageScrollViewController
 import UIKit
 
+public var fObjects = [FData]()
+
 @available(iOS 11.0, *)
 final class RootViewControler: TabPageScrollViewController {
     override func viewDidLoad() {
@@ -28,8 +30,8 @@ final class RootViewControler: TabPageScrollViewController {
         
         tabItems = [TabItem(title: "SFCR",vc: vc1),
                          TabItem(title: "ORSA",vc: vc2),
-                         TabItem(title: "Human Resources",vc: vc3)]
-
+                         TabItem(title: "Employees",vc: vc3)]
+        
         view.backgroundColor = .white
         tabHeight = 50
         super.viewDidLoad()
@@ -46,7 +48,8 @@ extension RootViewControler: TabPageDelegate {
 
         cell.title.text = tabItems[indexPath.row].title
         cell.tag = indexPath.row
-
+        
+            
         if selected == indexPath.row {
             cell.title.textColor = UIColor(red: 69 / 255, green: 134 / 255, blue: 255 / 255, alpha: 1.0)
         } else {
