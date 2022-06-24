@@ -10,6 +10,14 @@ import UIKit
 final class ViewController1: UIViewController {
     static let identifer = "ViewController1"
 
+    @IBOutlet weak var KeyFactsView: UIView!
+    @IBOutlet weak var ChartView: UIView!
+    @IBOutlet weak var GwpView: UIView!
+    @IBOutlet weak var RisksView: UIView!
+    @IBOutlet weak var ValuationView: UIView!
+    @IBOutlet weak var ProvisionsView: UIView!
+    @IBOutlet weak var SolvencyView: UIView!
+    
     
     var number: Int = 0
     static let idc: Int = 1

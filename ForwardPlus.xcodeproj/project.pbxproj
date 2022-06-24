@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE7895BA2865FA93000D6EEE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7895B92865FA93000D6EEE /* UIView+.swift */; };
 		AE9808A4285B0F06005411C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9808A3285B0F06005411C7 /* AppDelegate.swift */; };
 		AE9808A6285B0F06005411C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9808A5285B0F06005411C7 /* SceneDelegate.swift */; };
 		AE9808A8285B0F06005411C7 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9808A7285B0F06005411C7 /* ViewController1.swift */; };
@@ -62,6 +63,7 @@
 		4F8E0ABF88B10058F76BEBA5 /* Pods_ForwardPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForwardPlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		640660EFB6A3B0D1472F9418 /* Pods_ForwardPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForwardPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7800C0C9B28D6168E2849397 /* Pods-ForwardPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForwardPlusTests.debug.xcconfig"; path = "Target Support Files/Pods-ForwardPlusTests/Pods-ForwardPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE7895B92865FA93000D6EEE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		AE9808A0285B0F06005411C7 /* ForwardPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForwardPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9808A3285B0F06005411C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9808A5285B0F06005411C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				AE9808A3285B0F06005411C7 /* AppDelegate.swift */,
 				AE9808A5285B0F06005411C7 /* SceneDelegate.swift */,
 				AE9808A9285B0F06005411C7 /* Main.storyboard */,
+				AE7895B92865FA93000D6EEE /* UIView+.swift */,
 				AE9808A7285B0F06005411C7 /* ViewController1.swift */,
 				AE9808F3285B2200005411C7 /* ViewController2.swift */,
 				AE9808F5285B2213005411C7 /* ViewController3.swift */,
@@ -488,6 +491,7 @@
 				AE9808EC285B1825005411C7 /* String+.swift in Sources */,
 				AE9808EF285B186A005411C7 /* PageViewController.swift in Sources */,
 				AE9808A8285B0F06005411C7 /* ViewController1.swift in Sources */,
+				AE7895BA2865FA93000D6EEE /* UIView+.swift in Sources */,
 				AE9808F6285B2213005411C7 /* ViewController3.swift in Sources */,
 				AE9808A4285B0F06005411C7 /* AppDelegate.swift in Sources */,
 				AE9808EB285B1825005411C7 /* Filtering.swift in Sources */,
