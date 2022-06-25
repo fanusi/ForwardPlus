@@ -52,55 +52,53 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wo4-Lj-MKb" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1650"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rxv-Uh-yOl">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1650"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTp-Iy-hbb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="ozh-mz-tCp"/>
+                                                            <constraint firstAttribute="height" constant="300" id="ozh-mz-tCp"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYM-DV-cqK">
-                                                        <rect key="frame" x="0.0" y="200" width="414" height="200"/>
-                                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                        <rect key="frame" x="0.0" y="300" width="414" height="350"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="AcP-XJ-Lsm"/>
+                                                            <constraint firstAttribute="height" constant="350" id="AcP-XJ-Lsm"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xb6-hh-lYs">
-                                                        <rect key="frame" x="0.0" y="400" width="414" height="200"/>
-                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <rect key="frame" x="0.0" y="650" width="414" height="200"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="cmf-yv-kmi"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhZ-8b-IId">
-                                                        <rect key="frame" x="0.0" y="600" width="414" height="200"/>
+                                                        <rect key="frame" x="0.0" y="850" width="414" height="200"/>
                                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="q26-dr-3qe"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cw0-Wv-TG5">
-                                                        <rect key="frame" x="0.0" y="800" width="414" height="200"/>
+                                                        <rect key="frame" x="0.0" y="1050" width="414" height="200"/>
                                                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="8qY-sO-SMC"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J9-aS-jMg">
-                                                        <rect key="frame" x="0.0" y="1000" width="414" height="200"/>
+                                                        <rect key="frame" x="0.0" y="1250" width="414" height="200"/>
                                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="DMb-1k-NpQ"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTT-ea-wed">
-                                                        <rect key="frame" x="0.0" y="1200" width="414" height="200"/>
+                                                        <rect key="frame" x="0.0" y="1450" width="414" height="200"/>
                                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="xX5-iF-Z8V"/>
@@ -190,26 +188,17 @@
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
