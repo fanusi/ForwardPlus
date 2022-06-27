@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE3605862869DFD20055BE28 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3605852869DFD20055BE28 /* Support.swift */; };
 		AE7895BA2865FA93000D6EEE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7895B92865FA93000D6EEE /* UIView+.swift */; };
 		AE84F0902866F09D0066CD26 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE84F08F2866F09D0066CD26 /* UILabel+.swift */; };
 		AE9808A4285B0F06005411C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9808A3285B0F06005411C7 /* AppDelegate.swift */; };
@@ -64,6 +65,7 @@
 		4F8E0ABF88B10058F76BEBA5 /* Pods_ForwardPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForwardPlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		640660EFB6A3B0D1472F9418 /* Pods_ForwardPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForwardPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7800C0C9B28D6168E2849397 /* Pods-ForwardPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForwardPlusTests.debug.xcconfig"; path = "Target Support Files/Pods-ForwardPlusTests/Pods-ForwardPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE3605852869DFD20055BE28 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		AE7895B92865FA93000D6EEE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		AE84F08F2866F09D0066CD26 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		AE9808A0285B0F06005411C7 /* ForwardPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForwardPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,7 @@
 			children = (
 				AE7895B92865FA93000D6EEE /* UIView+.swift */,
 				AE84F08F2866F09D0066CD26 /* UILabel+.swift */,
+				AE3605852869DFD20055BE28 /* Support.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				AE9808EB285B1825005411C7 /* Filtering.swift in Sources */,
 				AE9808F4285B2200005411C7 /* ViewController2.swift in Sources */,
 				AE9808ED285B1825005411C7 /* Emurate.swift in Sources */,
+				AE3605862869DFD20055BE28 /* Support.swift in Sources */,
 				AEB475D12860A9B900B1FFD0 /* VC1Ext.swift in Sources */,
 				AE9808E0285B17A3005411C7 /* CategoryView.swift in Sources */,
 				AE9808F2285B1885005411C7 /* TabPageViewController.swift in Sources */,

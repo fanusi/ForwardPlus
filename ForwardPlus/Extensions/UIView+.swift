@@ -10,13 +10,31 @@ import UIKit
 
 extension UIView {
     
-    func HeightContraint(cst: CGFloat) {
+    func updateHeightConstraint(newHeight: CGFloat, identifier: String) {
         
-        self.translatesAutoresizingMaskIntoConstraints = false
-        let heightConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: cst)
-        self.addConstraint(heightConstraint)
+        for constraint in self.constraints {
+            if constraint.identifier == identifier {
+               constraint.constant = newHeight
+            }
+        }
+        self.layoutIfNeeded()
         
     }
     
+    func insertLabel1(text: String, font: String, fontsize: CGFloat, middle: Bool) {
+        
+        let newLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
+        newLabel.font = UIFont(name: font1, size: fontsize)
+        newLabel.text = text
+        newLabel.adjustsFontSizeToFitWidth = true
+        newLabel.layer.opacity = 1
+        
+        if middle {
+            newLabel.textAlignment = .center
+        }
+        
+        self.addSubview(newLabel)
+    
+    }
     
 }

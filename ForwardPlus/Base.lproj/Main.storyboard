@@ -59,49 +59,44 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTp-Iy-hbb">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="300" id="ozh-mz-tCp"/>
+                                                            <constraint firstAttribute="height" constant="300" identifier="KeyFactsConstraint" id="ozh-mz-tCp"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYM-DV-cqK">
                                                         <rect key="frame" x="0.0" y="300" width="414" height="350"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="350" id="AcP-XJ-Lsm"/>
+                                                            <constraint firstAttribute="height" constant="350" identifier="ChartConstraint" id="AcP-XJ-Lsm"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xb6-hh-lYs">
                                                         <rect key="frame" x="0.0" y="650" width="414" height="200"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="cmf-yv-kmi"/>
+                                                            <constraint firstAttribute="height" constant="200" identifier="GwpConstraint" id="cmf-yv-kmi"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhZ-8b-IId">
                                                         <rect key="frame" x="0.0" y="850" width="414" height="200"/>
-                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="q26-dr-3qe"/>
+                                                            <constraint firstAttribute="height" constant="200" identifier="RisksConstraint" id="q26-dr-3qe"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cw0-Wv-TG5">
                                                         <rect key="frame" x="0.0" y="1050" width="414" height="200"/>
-                                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="8qY-sO-SMC"/>
+                                                            <constraint firstAttribute="height" constant="200" identifier="ValuationConstraint" id="8qY-sO-SMC"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J9-aS-jMg">
                                                         <rect key="frame" x="0.0" y="1250" width="414" height="200"/>
-                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="DMb-1k-NpQ"/>
+                                                            <constraint firstAttribute="height" constant="200" identifier="ProvisionsConstraint" id="DMb-1k-NpQ"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTT-ea-wed">
                                                         <rect key="frame" x="0.0" y="1450" width="414" height="200"/>
-                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="xX5-iF-Z8V"/>
+                                                            <constraint firstAttribute="height" constant="200" identifier="SolvencyConstraint" id="xX5-iF-Z8V"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -128,7 +123,6 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yX5-s4-sHr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8M1-7Z-clS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yX5-s4-sHr" secondAttribute="bottom" id="Ntj-Pi-XIb"/>
@@ -143,6 +137,7 @@
                         <outlet property="ProvisionsView" destination="6J9-aS-jMg" id="EUX-ha-ZkZ"/>
                         <outlet property="RisksView" destination="zhZ-8b-IId" id="Bed-0i-eWu"/>
                         <outlet property="SolvencyView" destination="wTT-ea-wed" id="Iu5-w5-vOC"/>
+                        <outlet property="StackView" destination="Rxv-Uh-yOl" id="tmG-8U-gk2"/>
                         <outlet property="ValuationView" destination="Cw0-Wv-TG5" id="2eh-PM-ZX3"/>
                     </connections>
                 </viewController>
@@ -185,20 +180,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
