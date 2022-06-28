@@ -86,6 +86,18 @@ extension ViewController1 {
         }
     
     }
+    
+    func riskObjectsCount() -> Int {
+        
+        var counter: Int = 0
+        
+        for fobject in fObjects {
+            if fobject.sub == "Risks" {
+                counter += 1
+            }
+        }
+        return counter
+    }
 
 }
 

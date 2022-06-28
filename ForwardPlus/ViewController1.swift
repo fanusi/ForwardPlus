@@ -7,7 +7,10 @@
 
 import UIKit
 
-public let font1 = "Optima-Regular"
+public let font0 = "Optima-Regular"
+public let font2 = "Menlo"
+public let font1 = "Monaco"
+
 
 final class ViewController1: UIViewController {
     static let identifer = "ViewController1"
@@ -43,6 +46,7 @@ final class ViewController1: UIViewController {
         
         let headerFLabel = UILabel()
         headerFLabel.customLabel1(yvalue: marginY, height: labelHeight, width: view.frame.width, fontsize: fontSize, text: "Keyfacts")
+        headerFLabel.font = UIFont.boldSystemFont(ofSize: fontSize + 15)
         KeyFactsView.addSubview(headerFLabel)
         
         var a:CGFloat = 1
@@ -71,6 +75,7 @@ final class ViewController1: UIViewController {
         
         let headerCLabel = UILabel()
         headerCLabel.customLabel1(yvalue: marginY, height: labelHeight, width: view.frame.width, fontsize: fontSize, text: "Organizational Chart")
+        headerCLabel.font = UIFont.boldSystemFont(ofSize: fontSize + 15)
         ChartView.addSubview(headerCLabel)
         
         let chart = "Chart.jpg"
@@ -85,6 +90,7 @@ final class ViewController1: UIViewController {
         // Gross Written Premium per country
         let headerGLabel = UILabel()
         headerGLabel.customLabel1(yvalue: 0, height: labelHeight, width: view.frame.width, fontsize: fontSize, text: "Gross Written Premium")
+        headerGLabel.font = UIFont.boldSystemFont(ofSize: fontSize + 15)
         GwpView.addSubview(headerGLabel)
         
         let topRowCountryName = UIView(frame: CGRect(x: 0, y: 2 * labelHeight, width: view.frame.width * 0.40, height: labelHeight))
@@ -149,18 +155,12 @@ final class ViewController1: UIViewController {
         }
         
         // Update View Height so all facts are visible
-        GwpView.updateHeightConstraint(newHeight: a * labelHeight + (a + 2) * marginY, identifier: "GwpConstraint")
+        GwpView.updateHeightConstraint(newHeight: a * labelHeight + 2 * marginY, identifier: "GwpConstraint")
         
-        for i in 0...fObjects.count-1 {
+        // Risks
+        let risks:Int = riskObjectsCount()
+        RisksView.updateHeightConstraint(newHeight: CGFloat(risks * 60), identifier: "RisksConstraint")
             
-            print(fObjects[i].id)
-            print(fObjects[i].tab)
-            print(fObjects[i].sub)
-            print(fObjects[i].name)
-            print(fObjects[i].value)
-            
-        }
-        
     }
     
     
