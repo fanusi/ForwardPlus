@@ -94,7 +94,7 @@ final class ViewController1: UIViewController {
         GwpView.addSubview(headerGLabel)
         
         let topRowCountryName = UIView(frame: CGRect(x: 0, y: 2 * labelHeight, width: view.frame.width * 0.40, height: labelHeight))
-        topRowCountryName.insertLabel1(text: "   Market", font: font1, fontsize: 20, middle: false)
+        topRowCountryName.insertLabel1(text: "   (in k €)", font: font1, fontsize: 20, middle: false)
         GwpView.addSubview(topRowCountryName)
         
         let topRowCountryYear = UIView(frame: CGRect(x: 0.4 * view.frame.width, y: 2 * labelHeight, width: view.frame.width * 0.20, height: labelHeight))
@@ -160,40 +160,77 @@ final class ViewController1: UIViewController {
         // Risks
         let risks:Int = riskObjectsCount()
         RisksView.updateHeightConstraint(newHeight: CGFloat(risks * 60), identifier: "RisksConstraint")
+        
+        //Technical Provisions
+        let headerTLabel = UILabel()
+        headerTLabel.customLabel1(yvalue: 0, height: labelHeight, width: view.frame.width, fontsize: fontSize, text: "Technical Provisions")
+        headerTLabel.font = UIFont.boldSystemFont(ofSize: fontSize + 15)
+        ProvisionsView.addSubview(headerTLabel)
+        
+        let topRowPrDescr = UIView(frame: CGRect(x: 0, y: 2 * labelHeight, width: view.frame.width * 0.40, height: labelHeight))
+        topRowPrDescr.insertLabel1(text: "   (in k €)", font: font1, fontsize: 20, middle: false)
+        ProvisionsView.addSubview(topRowPrDescr)
+        
+        let topRowPrUl = UIView(frame: CGRect(x: 0.4 * view.frame.width, y: 2 * labelHeight, width: view.frame.width * 0.20, height: labelHeight))
+        topRowPrUl.insertLabel1(text: "U-Link", font: font1, fontsize: 20, middle: true)
+        ProvisionsView.addSubview(topRowPrUl)
+        
+        let topRowPrNl = UIView(frame: CGRect(x: 0.6 * view.frame.width, y: 2 * labelHeight, width: view.frame.width * 0.20, height: labelHeight))
+        topRowPrNl.insertLabel1(text: "Non-Link", font: font1, fontsize: 20, middle: true)
+        ProvisionsView.addSubview(topRowPrNl)
+        
+        let topRowPrTot = UIView(frame: CGRect(x: 0.8 * view.frame.width, y: 2 * labelHeight, width: view.frame.width * 0.20, height: labelHeight))
+        topRowPrTot.insertLabel1(text: "Total '21", font: font1, fontsize: 20, middle: true)
+        ProvisionsView.addSubview(topRowPrTot)
+
+        
+        
+        a = 3
+        b = 0
+        dummy = false
+
+        for i in 0...fObjects.count - 1 {
             
-    }
-    
-    
-    //Support functions
-    
-    func gwpOutput(index: CGFloat, Fobject1: FData, Fobject2: FData) -> String {
-        
-        let formatter = NumberFormatter()
-        formatter.groupingSeparator = "."
-        formatter.numberStyle = .decimal
-        formatter.minimumFractionDigits = 0
-        formatter.maximumFractionDigits = 0
-        //formatter.decimalSeparator = "." // Default separator is dependent to the current local.
-        
-        
-        switch index {
-        
-        case 0:
+            if fObjects[i].sub == "TP" && dummy == false {
+                
+                //Reset x-axis parameter
+                b = 0
+                
+                //Add four subviews representing description, UL value, NL value and total
+                for j in 0...3 {
+                    
+                    //subWidth defines relative size of screen the subview takes in
+                    
+                    let subWidth:CGFloat = j == 0 ? 0.40 : 0.20
             
-            let words = Fobject1.name.byWords
-            return String("   " + words[1])
-        case 1:
-            return formatter.string(for: Double(Fobject1.value)) ?? "No value"
-        case 2:
-            return formatter.string(for: Double(Fobject2.value)) ?? "No value"
-        case 3:
-            return String(format: "%.0f%%", 100 * ((Double(Fobject2.value) ?? 0) / (Double(Fobject1.value) ?? 1) - 1))
-        default:
-            return "Error"
-        
+                    let subView = UIView(frame: CGRect(x: b, y: a * labelHeight, width: view.frame.width * subWidth, height: labelHeight))
+            
+                    let labelText = provisionsOutput(index: CGFloat(j), Fobject1: fObjects[i], Fobject2: fObjects[i+1])
+                    
+                    let middle:Bool = j == 0 ? false : true
+                    
+                    subView.insertLabel1(text: labelText, font: font1, fontsize: 15, middle: middle)
+                    
+                    b += view.frame.width * subWidth
+                    
+                    ProvisionsView.addSubview(subView)
+                                        
+                }
+                
+                dummy = true
+                a += 1
+                
+            } else {
+            
+                dummy = false
+            
+            }
+            
         }
         
+        // Update View Height so all facts are visible
+        ProvisionsView.updateHeightConstraint(newHeight: a * labelHeight + 2 * marginY, identifier: "SolvencyConstraint")
+        
     }
-
     
 }

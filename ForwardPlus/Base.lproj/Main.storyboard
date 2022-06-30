@@ -96,10 +96,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wo4-Lj-MKb" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1650"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1451"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rxv-Uh-yOl">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1650"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1451"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTp-Iy-hbb">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
@@ -138,20 +138,19 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cw0-Wv-TG5">
-                                                        <rect key="frame" x="0.0" y="1050" width="414" height="200"/>
-                                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                        <rect key="frame" x="0.0" y="1050" width="414" height="1"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" identifier="ValuationConstraint" id="8qY-sO-SMC"/>
+                                                            <constraint firstAttribute="height" constant="1" identifier="ValuationConstraint" id="8qY-sO-SMC"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J9-aS-jMg">
-                                                        <rect key="frame" x="0.0" y="1250" width="414" height="200"/>
+                                                        <rect key="frame" x="0.0" y="1051" width="414" height="200"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" identifier="ProvisionsConstraint" id="DMb-1k-NpQ"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTT-ea-wed">
-                                                        <rect key="frame" x="0.0" y="1450" width="414" height="200"/>
+                                                        <rect key="frame" x="0.0" y="1251" width="414" height="200"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" identifier="SolvencyConstraint" id="xX5-iF-Z8V"/>
                                                         </constraints>
@@ -236,9 +235,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -98,6 +98,79 @@ extension ViewController1 {
         }
         return counter
     }
+    
+    func gwpOutput(index: CGFloat, Fobject1: FData, Fobject2: FData) -> String {
+        
+        let formatter = NumberFormatter()
+        formatter.groupingSeparator = "."
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 0
+        //formatter.decimalSeparator = "." // Default separator is dependent to the current local.
+        
+        
+        switch index {
+        
+        case 0:
+            
+            let words = Fobject1.name.byWords
+            return String("   " + words[1])
+        case 1:
+            return formatter.string(for: Double(Fobject1.value)) ?? "No value"
+        case 2:
+            return formatter.string(for: Double(Fobject2.value)) ?? "No value"
+        case 3:
+            return String(format: "%.0f%%", 100 * ((Double(Fobject2.value) ?? 0) / (Double(Fobject1.value) ?? 1) - 1))
+        default:
+            return "Error"
+        
+        }
+        
+    }
+    
+    func provisionsOutput(index: CGFloat, Fobject1: FData, Fobject2: FData) -> String {
+        
+        let formatter = NumberFormatter()
+        formatter.groupingSeparator = "."
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 0
+        //formatter.decimalSeparator = "." // Default separator is dependent to the current local.
+        
+        
+        switch index {
+        
+        case 0:
+            
+            let words = Fobject1.name.byWords
+            let word2 = words[0]
+            
+            switch word2 {
+            
+            case "Gross":
+                return String("   Best Estimate")
+            case "Risk":
+                return String("   Risk Margin")
+            case "TP":
+                return String("   Tech. Provisions")
+            default:
+                return "Error"
+            
+            }
+            
+        case 1:
+            return formatter.string(for: Double(Fobject1.value)) ?? "No value"
+        case 2:
+            return formatter.string(for: Double(Fobject2.value)) ?? "No value"
+        case 3:
+            let sum:Double = (Double(Fobject1.value) ?? 0) + (Double(Fobject2.value) ?? 0)
+            return formatter.string(for: sum) ?? "No value"
+        default:
+            return "Error"
+        
+        }
+        
+    }
 
 }
 
