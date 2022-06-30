@@ -155,7 +155,7 @@ final class ViewController1: UIViewController {
         }
         
         // Update View Height so all facts are visible
-        GwpView.updateHeightConstraint(newHeight: a * labelHeight + 2 * marginY, identifier: "GwpConstraint")
+        GwpView.updateHeightConstraint(newHeight: a * labelHeight + 3 * marginY, identifier: "GwpConstraint")
         
         // Risks
         let risks:Int = riskObjectsCount()
@@ -229,7 +229,7 @@ final class ViewController1: UIViewController {
         }
         
         // Update View Height so all facts are visible
-        ProvisionsView.updateHeightConstraint(newHeight: a * labelHeight + 2 * marginY, identifier: "SolvencyConstraint")
+        ProvisionsView.updateHeightConstraint(newHeight: a * labelHeight + 3 * marginY, identifier: "ProvisionsConstraint")
         
     }
     
