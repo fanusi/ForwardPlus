@@ -37,4 +37,18 @@ extension UIView {
     
     }
     
+    func backgroundColorSubViews(BackColor: UIColor) {
+        
+        self.subviews.forEach { (item) in
+            item.subviews.forEach { (item2) in
+                item2.subviews.forEach { (item3) in
+                    item3.subviews.forEach { (item4) in
+                        item4.backgroundColor = BackColor
+                    }
+                }
+            }
+        }
+        
+    }
+    
 }

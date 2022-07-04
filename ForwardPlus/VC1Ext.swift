@@ -171,6 +171,33 @@ extension ViewController1 {
         }
         
     }
+    
+    func solvencyOutput(index: CGFloat, Fobject1: FData) -> String {
+        
+        let formatter = NumberFormatter()
+        formatter.groupingSeparator = "."
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 0
+        //formatter.decimalSeparator = "." // Default separator is dependent to the current local.
+        
+        
+        switch index {
+        
+        case 0:
+            return String("   " + Fobject1.name)
+        case 1:
+            switch Fobject1.name {
+                case "Solvency 2 Ratio":
+                    return String(format: "%.0f%%", 100 * (Double(Fobject1.value) ?? 0))
+                default:
+                    return formatter.string(for: Double(Fobject1.value)) ?? "No value"
+            }
+        default:
+            return "Error"
+        }
+        
+    }
 
 }
 

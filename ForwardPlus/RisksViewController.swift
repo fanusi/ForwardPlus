@@ -8,6 +8,7 @@
 import UIKit
 
 class RiskViewController: UITableViewController {
+
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let riskobjects: Int =  riskObjectsCount()
