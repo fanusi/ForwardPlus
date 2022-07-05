@@ -10,6 +10,7 @@ import TabPageScrollViewController
 import UIKit
 
 public var fObjects = [FData]()
+public var eObjects = [EmployeeData]()
 
 @available(iOS 11.0, *)
 final class RootViewControler: TabPageScrollViewController {
