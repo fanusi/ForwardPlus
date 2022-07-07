@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Office-1.jpeg",
+      "filename" : "Office-1024.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Office.jpeg",
+      "filename" : "Office-20@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Office-2.jpeg",
+      "filename" : "Office-20@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

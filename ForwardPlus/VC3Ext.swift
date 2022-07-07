@@ -61,17 +61,17 @@ extension ViewController3 {
             
             eObjects.removeAll()
                 
-            print(status.count)
-                print(name1.count)
-                print(position.count)
-            
-            print("---")
+//            print(status.count)
+//                print(name1.count)
+//                print(position.count)
+//
+//            print("---")
                 
             let rows = worksheet.data?.rows.count ?? 1
-            print(rows)
+            //print(rows)
                 
-            for i in 1...rows-3 {
-                print(i)
+            for i in 1...rows-2 {
+                
                 let newObject = EmployeeData(id: i, fullName: name1[i], position: position[i], status: status[i])
                     eObjects.append(newObject)
 

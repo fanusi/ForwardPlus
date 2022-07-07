@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2708842876C40B00A90E7E /* Forward plus xcode2.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = AE2708832876C40B00A90E7E /* Forward plus xcode2.xlsx */; };
 		AE3605862869DFD20055BE28 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3605852869DFD20055BE28 /* Support.swift */; };
 		AE4591E0286B22F30085F547 /* RisksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4591DF286B22F30085F547 /* RisksViewController.swift */; };
 		AE7895BA2865FA93000D6EEE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7895B92865FA93000D6EEE /* UIView+.swift */; };
@@ -33,7 +34,6 @@
 		AE9808F2285B1885005411C7 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9808F0285B1885005411C7 /* TabPageViewController.swift */; };
 		AE9808F4285B2200005411C7 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9808F3285B2200005411C7 /* ViewController2.swift */; };
 		AE9808F6285B2213005411C7 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9808F5285B2213005411C7 /* ViewController3.swift */; };
-		AEA836A22874BCFA007E03FA /* Forward plus xcode2.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = AEA836A02874BCFA007E03FA /* Forward plus xcode2.xlsx */; };
 		AEA836A32874BCFA007E03FA /* Forward plus xcode1.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = AEA836A12874BCFA007E03FA /* Forward plus xcode1.xlsx */; };
 		AEA836A52874BEC3007E03FA /* EmployeeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA836A42874BEC3007E03FA /* EmployeeData.swift */; };
 		AEA836A72874C91F007E03FA /* VC3Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA836A62874C91F007E03FA /* VC3Ext.swift */; };
@@ -70,6 +70,7 @@
 		4F8E0ABF88B10058F76BEBA5 /* Pods_ForwardPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForwardPlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		640660EFB6A3B0D1472F9418 /* Pods_ForwardPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForwardPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7800C0C9B28D6168E2849397 /* Pods-ForwardPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForwardPlusTests.debug.xcconfig"; path = "Target Support Files/Pods-ForwardPlusTests/Pods-ForwardPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE2708832876C40B00A90E7E /* Forward plus xcode2.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forward plus xcode2.xlsx"; sourceTree = "<group>"; };
 		AE3605852869DFD20055BE28 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		AE4591DF286B22F30085F547 /* RisksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RisksViewController.swift; sourceTree = "<group>"; };
 		AE7895B92865FA93000D6EEE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 		AE9808F1285B1885005411C7 /* TabPageScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabPageScrollViewController.h; sourceTree = "<group>"; };
 		AE9808F3285B2200005411C7 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		AE9808F5285B2213005411C7 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
-		AEA836A02874BCFA007E03FA /* Forward plus xcode2.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forward plus xcode2.xlsx"; sourceTree = "<group>"; };
 		AEA836A12874BCFA007E03FA /* Forward plus xcode1.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forward plus xcode1.xlsx"; sourceTree = "<group>"; };
 		AEA836A42874BEC3007E03FA /* EmployeeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeData.swift; sourceTree = "<group>"; };
 		AEA836A62874C91F007E03FA /* VC3Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3Ext.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				AEA836A12874BCFA007E03FA /* Forward plus xcode1.xlsx */,
-				AEA836A02874BCFA007E03FA /* Forward plus xcode2.xlsx */,
+				AE2708832876C40B00A90E7E /* Forward plus xcode2.xlsx */,
 				AE9808A2285B0F06005411C7 /* ForwardPlus */,
 				AE9808DE285B16FC005411C7 /* TabPageScrollViewController */,
 				AE9808B9285B0F0B005411C7 /* ForwardPlusTests */,
@@ -387,7 +387,7 @@
 				AEA836A32874BCFA007E03FA /* Forward plus xcode1.xlsx in Resources */,
 				AE9808AB285B0F06005411C7 /* Main.storyboard in Resources */,
 				AE9808D9285B155C005411C7 /* CategoryCell.xib in Resources */,
-				AEA836A22874BCFA007E03FA /* Forward plus xcode2.xlsx in Resources */,
+				AE2708842876C40B00A90E7E /* Forward plus xcode2.xlsx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

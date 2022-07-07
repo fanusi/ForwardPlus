@@ -72,7 +72,7 @@ extension ViewController1 {
                 
               
             let rows = worksheet.data?.rows.count ?? 1
-            print(rows)
+            //print(rows)
                 
             for i in 0...rows-1 {
                 

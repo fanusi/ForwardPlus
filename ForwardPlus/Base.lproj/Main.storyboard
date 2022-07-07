@@ -240,31 +240,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trouvé, Stéphane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5N-sG-exq" userLabel="Name">
-                                                    <rect key="frame" x="8" y="0.0" width="341" height="30"/>
+                                                    <rect key="frame" x="8" y="0.0" width="351" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="rWw-Bs-k0Y"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="muA-kS-a7b" userLabel="Status">
-                                                    <rect key="frame" x="359" y="0.0" width="55" height="55"/>
+                                                    <rect key="frame" x="369" y="7.5" width="40" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="55" id="4PB-94-epP"/>
-                                                        <constraint firstAttribute="height" constant="55" id="tlX-Rb-eri"/>
+                                                        <constraint firstAttribute="width" constant="40" id="4PB-94-epP"/>
+                                                        <constraint firstAttribute="height" constant="40" id="tlX-Rb-eri"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3P-hR-ScQ" userLabel="Position">
-                                                    <rect key="frame" x="15" y="30" width="334" height="25"/>
-                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                                    <rect key="frame" x="15" y="30" width="344" height="25"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="muA-kS-a7b" secondAttribute="trailing" id="0BC-zZ-CNG"/>
+                                                <constraint firstAttribute="trailing" secondItem="muA-kS-a7b" secondAttribute="trailing" constant="5" id="0BC-zZ-CNG"/>
                                                 <constraint firstItem="muA-kS-a7b" firstAttribute="leading" secondItem="X3P-hR-ScQ" secondAttribute="trailing" constant="10" id="Blr-71-I71"/>
                                                 <constraint firstItem="Y5N-sG-exq" firstAttribute="leading" secondItem="eCo-9S-5MC" secondAttribute="leading" constant="8" id="Fdk-aj-b6C"/>
                                                 <constraint firstItem="X3P-hR-ScQ" firstAttribute="top" secondItem="Y5N-sG-exq" secondAttribute="bottom" id="LQq-B0-5i4"/>
@@ -298,7 +298,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3D8-XC-y5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1539" y="104"/>
+            <point key="canvasLocation" x="1537.68115942029" y="103.79464285714285"/>
         </scene>
     </scenes>
     <resources>

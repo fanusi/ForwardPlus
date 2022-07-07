@@ -19,10 +19,16 @@ final class ViewController3: UITableViewController {
         cell.nameLabel.text = eObjects[indexPath.row].fullName
         cell.positionLabel.text = eObjects[indexPath.row].position
         
+        //cell.statusImageView.contentMode = .scaleAspectFill
+        //cell.statusImageView.clipsToBounds = true
+        
+        let homeImage = UIImage(named:"HO2.jpg")
+        let officeImage = UIImage(named: "Office.jpeg")
+        
         if eObjects[indexPath.row].status == "Home" {
-            cell.statusImageView = UIImageView(image: UIImage(named:"HO2.jpg"))
+            cell.statusImageView.image = homeImage
         } else {
-            cell.statusImageView = UIImageView(image: UIImage(named:"Office.jpeg"))
+            cell.statusImageView.image = officeImage
         }
         
         return cell
@@ -42,6 +48,7 @@ final class ViewController3: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         populateDataObjects()
+        self.tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 100, right: 0)
         
     }
     
